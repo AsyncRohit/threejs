@@ -1,0 +1,36 @@
+1). Basic setup of scene,camera and geometry 
+
+first create a scene
+then create a camera // new THREE.perspectiveCamera()
+give the camera a position // camera.position.z=5;
+add the camera to scene by using // scene.add(camera)
+
+//creating a geometry 
+now create a geometry by using // new THREE.BoxGeometry()
+then create a material by using // new THREE.MeshBasicMaterial("any color") 
+then create a mesh by using // new THREE.Mesh(geometry,material)
+mesh is a combination of geometry and material
+then add the mesh to the scene by using // scene.add(mesh)
+
+//creating a renderer
+
+renderer is a class that is used to render the scene  //any canvas or div can be used as a renderer
+now create a renderer by using // new THREE.WebGLRenderer({canvas:any canvas or div})
+now set the size of the renderer by using // renderer.setSize(window.innerWidth,window.innerHeight)
+now render the scene by using // renderer.render(scene,camera)
+
+2). how to perform animation in three.js
+
+create a clock by using // new THREE.Clock()
+crate a function with any name you want to give to it  for now suppose animate is the name 
+now use the requestAnimationFrame() method to call the function //window.requestAnimationFrame(function)
+simply call the function in the requestAnimationFrame method
+for animating the object we use the clock.getElapsedTime() method
+now do any changes in the function to animate the object
+
+now we have to animate the object by calling the function  animate 
+
+
+
+
+
